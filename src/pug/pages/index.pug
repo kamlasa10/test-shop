@@ -1,0 +1,1780 @@
+
+extends ../layout/main
+block variable
+	-
+		var title_page = 'Заголовок'
+		var id_page = 'user-page-id'
+		var class_page = 'user-page'
+block meta
+	title= title_page
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(defer src='./assets/scripts/index.js')
+block content
+	.wrapper 
+		.content-container
+			.products.products--mt 
+				ul.tabs.products__tabs 
+					li.tabs__item 
+						button(type="button" data-tab="0").tabs__btn.btn-res Монстр Боксы
+					li.tabs__item 
+						button(type="button" data-tab="1").tabs__btn.btn-res Банк
+					li.tabs__item 
+						button(type="button" data-tab="2").tabs__btn.btn-res Наборы
+					li.tabs__item 
+						button(type="button" data-tab="3").tabs__btn.btn-res Спецпредложения
+					li.tabs__item 
+						button(type="button" data-tab="4").tabs__btn.btn-res Промокоды
+				.products__content 
+					.products__wrap(data-tab-content="0")
+						.products__block.products__block--1 
+							.products__title.products__title--main Кристаллы Незера
+							ul.products__items 
+								li.products__item.products__item--1
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint01_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint11_linear)"/>
+												<defs>
+												<linearGradient id="paint01_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint11_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/1.png').products__img
+										.products__item-wrap
+											.products__title x100
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint02_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint12_linear)"/>
+												<defs>
+												<linearGradient id="paint02_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint12_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg> 
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/2.png').products__img
+										.products__item-wrap
+											.products__title x500
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint03_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint13_linear)"/>
+												<defs>
+												<linearGradient id="paint03_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint13_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg> 
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x750
+										+img('crystals/3.png').products__img
+										.products__item-wrap
+											.products__title x1000
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint04_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint14_linear)"/>
+												<defs>
+												<linearGradient id="paint04_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint14_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x1500
+										+img('crystals/4.png').products__img
+										.products__item-wrap
+											.products__title x100
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint04_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint14_linear)"/>
+												<defs>
+												<linearGradient id="paint04_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint14_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/5.png').products__img
+										.products__item-wrap
+											.products__title x100
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint04_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint14_linear)"/>
+												<defs>
+												<linearGradient id="paint04_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint14_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/6.png').products__img
+										.products__item-wrap
+											.products__title x500
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint04_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint14_linear)"/>
+												<defs>
+												<linearGradient id="paint04_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint14_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x750
+										+img('crystals/7.png').products__img
+										.products__item-wrap
+											.products__title x1000
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint04_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint14_linear)"/>
+												<defs>
+												<linearGradient id="paint04_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint14_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/8.png').products__img
+										.products__item-wrap
+											.products__title x1500
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint04_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint14_linear)"/>
+												<defs>
+												<linearGradient id="paint04_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint14_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/9.png').products__img
+										.products__item-wrap
+											.products__title x100
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+						.products__block.products__block--2 
+							.products__title.products__title--main Кристаллы Незера
+							ul.products__items 
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/1.png').products__img
+										.products__item-wrap
+											.products__title x1000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/2.png').products__img
+										.products__item-wrap
+											.products__title x5000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/3.png').products__img
+										.products__item-wrap
+											.products__title x10000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/4.png').products__img
+										.products__item-wrap
+											.products__title x10000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/5.png').products__img
+										.products__item-wrap
+											.products__title x1000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/6.png').products__img
+										.products__item-wrap
+											.products__title x5000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+					.products__wrap(data-tab-content="1")
+						.products__block.products__block--1 
+							.products__title.products__title--main Кристаллы Незера
+							ul.products__items 
+								li.products__item.products__item--1
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint012_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint12_linear)"/>
+												<defs>
+												<linearGradient id="paint012_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint012_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/1.png').products__img
+										.products__item-wrap
+											.products__title x100
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint022_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint122_linear)"/>
+												<defs>
+												<linearGradient id="paint022_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint122_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg> 
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/2.png').products__img
+										.products__item-wrap
+											.products__title x500
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint032_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint13_linear)"/>
+												<defs>
+												<linearGradient id="paint032_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint132_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg> 
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x750
+										+img('crystals/3.png').products__img
+										.products__item-wrap
+											.products__title x1000
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint042_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint14_linear)"/>
+												<defs>
+												<linearGradient id="paint042_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint142_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x1500
+										+img('crystals/4.png').products__img
+										.products__item-wrap
+											.products__title x100
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint042_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint142_linear)"/>
+												<defs>
+												<linearGradient id="paint042_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint142_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/5.png').products__img
+										.products__item-wrap
+											.products__title x100
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint042_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint14_linear)"/>
+												<defs>
+												<linearGradient id="paint042_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint142_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/6.png').products__img
+										.products__item-wrap
+											.products__title x500
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint042_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint14_linear)"/>
+												<defs>
+												<linearGradient id="paint042_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint142_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x750
+										+img('crystals/7.png').products__img
+										.products__item-wrap
+											.products__title x1000
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint042_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint14_linear)"/>
+												<defs>
+												<linearGradient id="paint042_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint142_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/8.png').products__img
+										.products__item-wrap
+											.products__title x1500
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint042_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint14_linear)"/>
+												<defs>
+												<linearGradient id="paint042_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint142_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/9.png').products__img
+										.products__item-wrap
+											.products__title x100
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+						.products__block.products__block--2 
+							.products__title.products__title--main Кристаллы Незера
+							ul.products__items 
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/1.png').products__img
+										.products__item-wrap
+											.products__title x1000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/2.png').products__img
+										.products__item-wrap
+											.products__title x5000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/3.png').products__img
+										.products__item-wrap
+											.products__title x10000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/4.png').products__img
+										.products__item-wrap
+											.products__title x10000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/5.png').products__img
+										.products__item-wrap
+											.products__title x1000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/6.png').products__img
+										.products__item-wrap
+											.products__title x5000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+					.products__wrap(data-tab-content="2")
+						.products__block.products__block--1 
+							.products__title.products__title--main Кристаллы Незера
+							ul.products__items 
+								li.products__item.products__item--1
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint013_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint11_linear)"/>
+												<defs>
+												<linearGradient id="paint013_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint113_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/1.png').products__img
+										.products__item-wrap
+											.products__title x100
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint023_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint12_linear)"/>
+												<defs>
+												<linearGradient id="paint023_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint123_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg> 
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/2.png').products__img
+										.products__item-wrap
+											.products__title x500
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint033_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint13_linear)"/>
+												<defs>
+												<linearGradient id="paint033_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint133_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg> 
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x750
+										+img('crystals/3.png').products__img
+										.products__item-wrap
+											.products__title x1000
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint043_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint143_linear)"/>
+												<defs>
+												<linearGradient id="paint043_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint143_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x1500
+										+img('crystals/4.png').products__img
+										.products__item-wrap
+											.products__title x100
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint043_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint14_linear)"/>
+												<defs>
+												<linearGradient id="paint043_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint143_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/5.png').products__img
+										.products__item-wrap
+											.products__title x100
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint043_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint143_linear)"/>
+												<defs>
+												<linearGradient id="paint043_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint143_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/6.png').products__img
+										.products__item-wrap
+											.products__title x500
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint043_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint143_linear)"/>
+												<defs>
+												<linearGradient id="paint043_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint143_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x750
+										+img('crystals/7.png').products__img
+										.products__item-wrap
+											.products__title x1000
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint043_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint143_linear)"/>
+												<defs>
+												<linearGradient id="paint043_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint143_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/8.png').products__img
+										.products__item-wrap
+											.products__title x1500
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint043_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint143_linear)"/>
+												<defs>
+												<linearGradient id="paint043_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint143_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/9.png').products__img
+										.products__item-wrap
+											.products__title x100
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+						.products__block.products__block--2 
+							.products__title.products__title--main Кристаллы Незера
+							ul.products__items 
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/1.png').products__img
+										.products__item-wrap
+											.products__title x1000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/2.png').products__img
+										.products__item-wrap
+											.products__title x5000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/3.png').products__img
+										.products__item-wrap
+											.products__title x10000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/4.png').products__img
+										.products__item-wrap
+											.products__title x10000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/5.png').products__img
+										.products__item-wrap
+											.products__title x1000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/6.png').products__img
+										.products__item-wrap
+											.products__title x5000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+					.products__wrap(data-tab-content="3")
+						.products__block.products__block--1 
+							.products__title.products__title--main Кристаллы Незера
+							ul.products__items 
+								li.products__item.products__item--1
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint014_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint114_linear)"/>
+												<defs>
+												<linearGradient id="paint014_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint114_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/1.png').products__img
+										.products__item-wrap
+											.products__title x100
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint024_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint124_linear)"/>
+												<defs>
+												<linearGradient id="paint024_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint124_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg> 
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/2.png').products__img
+										.products__item-wrap
+											.products__title x500
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint034_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint134_linear)"/>
+												<defs>
+												<linearGradient id="paint034_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint134_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg> 
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x750
+										+img('crystals/3.png').products__img
+										.products__item-wrap
+											.products__title x1000
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint044_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint144_linear)"/>
+												<defs>
+												<linearGradient id="paint044_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint144_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x1500
+										+img('crystals/4.png').products__img
+										.products__item-wrap
+											.products__title x100
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint044_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint144_linear)"/>
+												<defs>
+												<linearGradient id="paint044_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint144_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/5.png').products__img
+										.products__item-wrap
+											.products__title x100
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint044_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint144_linear)"/>
+												<defs>
+												<linearGradient id="paint044_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint144_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/6.png').products__img
+										.products__item-wrap
+											.products__title x500
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint044_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint144_linear)"/>
+												<defs>
+												<linearGradient id="paint044_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint144_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x750
+										+img('crystals/7.png').products__img
+										.products__item-wrap
+											.products__title x1000
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint044_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint144_linear)"/>
+												<defs>
+												<linearGradient id="paint044_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint144_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/8.png').products__img
+										.products__item-wrap
+											.products__title x1500
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint044_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint144_linear)"/>
+												<defs>
+												<linearGradient id="paint044_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint144_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/9.png').products__img
+										.products__item-wrap
+											.products__title x100
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+						.products__block.products__block--2 
+							.products__title.products__title--main Кристаллы Незера
+							ul.products__items 
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/1.png').products__img
+										.products__item-wrap
+											.products__title x1000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/2.png').products__img
+										.products__item-wrap
+											.products__title x5000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/3.png').products__img
+										.products__item-wrap
+											.products__title x10000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/4.png').products__img
+										.products__item-wrap
+											.products__title x10000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/5.png').products__img
+										.products__item-wrap
+											.products__title x1000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/6.png').products__img
+										.products__item-wrap
+											.products__title x5000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+					.products__wrap(data-tab-content="4")
+						.products__block.products__block--1 
+							.products__title.products__title--main Кристаллы Незера
+							ul.products__items 
+								li.products__item.products__item--1
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint05_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint15_linear)"/>
+												<defs>
+												<linearGradient id="paint05_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint15_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/1.png').products__img
+										.products__item-wrap
+											.products__title x100
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint025_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint125_linear)"/>
+												<defs>
+												<linearGradient id="paint025_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint125_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg> 
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/2.png').products__img
+										.products__item-wrap
+											.products__title x500
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint035_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint135_linear)"/>
+												<defs>
+												<linearGradient id="paint035_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint135_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg> 
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x750
+										+img('crystals/3.png').products__img
+										.products__item-wrap
+											.products__title x1000
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint045_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint145_linear)"/>
+												<defs>
+												<linearGradient id="paint045_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint145_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x1500
+										+img('crystals/4.png').products__img
+										.products__item-wrap
+											.products__title x100
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint045_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint145_linear)"/>
+												<defs>
+												<linearGradient id="paint045_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint145_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/5.png').products__img
+										.products__item-wrap
+											.products__title x100
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint045_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint145_linear)"/>
+												<defs>
+												<linearGradient id="paint045_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint145_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/6.png').products__img
+										.products__item-wrap
+											.products__title x500
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint045_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint14_linear)"/>
+												<defs>
+												<linearGradient id="paint045_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint145_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x750
+										+img('crystals/7.png').products__img
+										.products__item-wrap
+											.products__title x1000
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint045_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint145_linear)"/>
+												<defs>
+												<linearGradient id="paint045_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint145_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/8.png').products__img
+										.products__item-wrap
+											.products__title x1500
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										.products-info
+											<svg width="96" height="78" viewBox="0 0 96 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 39.661V72L83 0H42L0 39.661Z" fill="url(#paint045_linear)"/>
+												<path d="M3 42.2542V64.1243L72.5 4H43L3 42.2542Z" fill="url(#paint145_linear)"/>
+												<defs>
+												<linearGradient id="paint045_linear" x1="1.58418e-06" y1="54.5" x2="64.5" y2="-1.83223e-06" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF4910"/>
+												<stop offset="1" stop-color="#FF4910"/>
+												</linearGradient>
+												<linearGradient id="paint145_linear" x1="50.1166" y1="7" x2="3.11613" y2="56.3197" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#DC2B19" stop-opacity="0"/>
+												<stop offset="1" stop-color="#DC2B19"/>
+												</linearGradient>
+												</defs>
+											</svg>
+											.products-info__wrap 
+												+img('ui/coin.png')
+												.products-info__title x500
+										+img('crystals/9.png').products__img
+										.products__item-wrap
+											.products__title x100
+											.products__desc Handful of Coins
+											a(href="#").products__buy 
+												span Купить
+												span
+													+svg('dollar')
+													| 10
+						.products__block.products__block--2 
+							.products__title.products__title--main Кристаллы Незера
+							ul.products__items 
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/1.png').products__img
+										.products__item-wrap
+											.products__title x1000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/2.png').products__img
+										.products__item-wrap
+											.products__title x5000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/3.png').products__img
+										.products__item-wrap
+											.products__title x10000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/4.png').products__img
+										.products__item-wrap
+											.products__title x10000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/5.png').products__img
+										.products__item-wrap
+											.products__title x1000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+								li.products__item
+									+img('ui/product-decor.svg').products__item-decor
+									.products__item-block
+										+img('coins/6.png').products__img
+										.products__item-wrap
+											.products__title x5000
+											.products__desc Handful of Coins
+											a(href="#").products__buy.products__buy--coins 
+												span Купить
+												span
+													+img('ui/crystals.png')
+													| 10
+block footer
+	include ../includes/footer.pug
+
+block header
+	include ../includes/header

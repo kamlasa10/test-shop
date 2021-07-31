@@ -1,0 +1,200 @@
+.header {
+    position: relative;
+    z-index: 2;
+    background: url('../images/bg-header.jpg') no-repeat center/cover;
+
+    @include to(650px) {
+        padding-top: 8px;
+    }
+
+    @include to(414px) {
+        &__items {
+            order: -1;
+        }
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 8px;
+        align-items: center;
+
+        &__item {
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            @include to(600px) {
+                width: 170px;
+                justify-content: flex-end;
+            }
+
+            @include to(480px) {
+                width: auto;
+            }
+
+            img {
+                transform: translateX(37px);
+                object-fit: contain;
+
+                @include to(600px) {
+                    position: absolute;
+                    left: -5px;
+                    transform: translateX(0);
+                }
+
+                @include to(414px) {
+                    position: static;
+                }
+            }
+
+            &--1 {
+                img {
+                    width: 69px;
+                    height: 69px;
+
+                    @include to(650px) {
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                    @include to(430px) {
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+
+            &--2 {
+                img {
+                    width: 82px;
+                    height: 82px;
+
+                    @include to(650px) {
+                        width: 55px;
+                        height: 55px;
+                    }
+
+                    @include to(650px) {
+                        left: 6px;
+                    }
+
+                    @include to(430px) {
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+
+        &__content {
+            display: flex;
+            align-items: center;
+            padding: 6px 0;
+            background-color: rgba(#0d0b0f, 0.5);
+            padding-left: 50px;
+            padding-right: 20px;
+            border-radius: 100px;
+            transition: all 0.4s;
+
+            @include to(414px) {
+                padding: 5px 15px;
+            }
+
+            &:hover {
+                background-color: rgba(46, 39, 52, 0.6);
+            }
+        }
+
+        &__add {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 25px;
+            height: 25px;
+            background: linear-gradient(90deg, #30c325 9.09%, #2c812a 100%);
+            border-radius: 5px;
+            border: 1px solid #21cc14;
+            transition: all 0.4s;
+
+            @include to(414px) {
+                width: 20px;
+                height: 20px;
+            }
+
+            &::before,
+            &::after {
+                content: '';
+                display: block;
+                width: 3px;
+                height: 13px;
+                background: #ffffff;
+
+                @include to(414px) {
+                    width: 2px;
+                    height: 10px;
+                }
+            }
+
+            &::before {
+                transform: rotate(90deg) translateY(-2px);
+
+                @include to(414px) {
+                    transform: rotate(90deg) translateY(-1px);
+                }
+            }
+
+            &::after {
+                transform: translateX(-1px);
+            }
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        &__wrap {
+            margin-right: 18px;
+        }
+
+        &__count {
+            font-family: $leksaSans;
+            font-weight: 700;
+            font-size: 18px;
+            color: #fff;
+            line-height: 1.2em;
+
+            @include to(650px) {
+                font-size: 16px;
+            }
+
+            @include to(480px) {
+                font-size: 14px;
+            }
+        }
+
+        &__name {
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 1.2em;
+            color: #b9b7ea;
+
+            @include to(650px) {
+                display: none;
+            }
+        }
+    }
+}

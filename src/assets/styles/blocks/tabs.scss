@@ -1,0 +1,69 @@
+.tabs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(188px, 1fr));
+    grid-gap: 10px;
+
+    &__btn {
+        position: relative;
+        padding: 15px 10px;
+        background: #212031;
+        border-radius: 10px 10px 0px 0px;
+        font-family: $leksaSans;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2em;
+        color: #9794c6;
+        width: 100%;
+        transition: all 0.4s;
+
+        @include to(720px) {
+            font-size: 18px;
+            padding: 12px 10px;
+        }
+
+        @include to(480px) {
+            font-size: 16px;
+            padding: 8px 10px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, #f52cbf 0%, #ff7c46 100%);
+            opacity: 0.2;
+            height: 3px;
+            opacity: 0;
+            transition: all 0.4s;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+            width: 0%;
+            right: 10px;
+            z-index: 1;
+            height: 3px;
+            background: linear-gradient(90deg, #f52cbf 0%, #ff7c46 100%);
+            transition: all 0.4s;
+        }
+
+        &:hover,
+        &.active {
+            background-color: #323145;
+            color: #fff;
+
+            &::before {
+                opacity: 0.2;
+            }
+
+            &::after {
+                width: calc(100% - 20px);
+            }
+        }
+    }
+}
