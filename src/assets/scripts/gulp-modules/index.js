@@ -1,5 +1,4 @@
 @@include('./libs.js');
-gsap.registerPlugin(ScrollTrigger);
 
 class Tabs {
     constructor(tabs, content, activeClassName) {
