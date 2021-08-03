@@ -6,6 +6,5 @@
 /.idea/
 /yarn.lock
 /package-lock.json
-/dist/
 /prod/
 /src/assets/svg-sprite/sprite/symbol_sprite.php
