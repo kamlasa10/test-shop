@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Leksa Sans';
+    src: url('LeksaSans-Bold.woff2') format('woff2'),
+        url('LeksaSans-Bold.woff') format('woff'),
+        url('LeksaSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
